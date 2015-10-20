@@ -10,14 +10,17 @@
 <div class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <a class="btn btn-info" href="/puppies">All Puppies</a>
-      <a class="btn btn-info" href="/puppies/new">Add Puppy</a>
+    <% @puppies.each do |p| %>
+      <span class="btn btn-info"> <%= link_to "About", "/puppies/about" %></span>
+      <span class="btn btn-info"> <%= link_to "Contact", "/puppies/contact" %></span>
       <a class="btn btn-info" href="/puppies/about">About</a>
       <a class="btn btn-info" href="/puppies/contact">Contact</a>
       <!-- ADD CONTACT AND ABOUT PAGES -->
+      <% end %>
     </div>
   </div>
 </div>
+
 <% flash.each do |key, value| %>
   <% if key == "notice" %>
     <%= content_tag :div, value, class: "text-center alert alert-warning" %>
@@ -27,6 +30,7 @@
     <%= content_tag :div, value, class: "text-center alert alert-success" %>
   <% end %>
 <% end %>
+
 <%= yield %>
 
 </body>

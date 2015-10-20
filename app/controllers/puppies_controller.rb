@@ -20,7 +20,7 @@ class PuppiesController < ApplicationController
   end
 
   def show
-    @puppy = Puppy.find(params[:id])
+    @puppy = Puppy.find (params[:id])
   end
 
   def edit
@@ -43,6 +43,12 @@ class PuppiesController < ApplicationController
     @puppy.destroy
        redirect_to root_path, flash: {alert: "You've successfully deleted a puppy"}
   end
+
+  # def about
+
+  # end
+
+  # def contact
 
   private 
 
