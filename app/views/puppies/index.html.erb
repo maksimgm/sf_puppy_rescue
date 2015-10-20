@@ -1,0 +1,34 @@
+<h1 class="text-center">All Puppies</h1>
+<div class="container">
+  <div class="row">
+    <% @puppies.each do |p| %>
+      <div class="col-xs-4">
+        <div class="thumbnail">
+          <h3 class="text-center"><%p.name%></h3>
+          <%= link_to p do %>
+            <img src="<%= p.image_url%>" alt="">
+          <% end %>
+          <div class="caption">
+            <p>
+              <h5>Name:</h5>
+              <%=p.name%>
+            </p>
+            <p>
+              <h5>Age:</h5>
+              <%=p.age%>
+            </p>
+            <p>
+              <h6>Bio:</h6>
+              <%=p.bio%>
+            </p>
+            <p>
+              <span class="btn btn-success btn-inline"><%= link_to "Edit", edit_puppy_path(p) %></span>
+              
+              <span class="btn btn-warning btn-inline"><%= link_to "Destroy", p, method: :delete, data: {confirm: "Are you sure?"} %></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

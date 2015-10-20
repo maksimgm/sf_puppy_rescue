@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="thumbnail">
+      <h3 class="text-center"><%= @puppy.name%></h3>
+      <img src="<%= @puppy.image_url%>" alt="Puppy Image">
+    <div class="caption">
+      <p>
+        <h5>Age:</h5>
+          <p><%= @puppy.age%></p>
+      </p>
+      <p>
+        <h5>Bio:</h5> 
+          <p><%= @puppy.bio%></p>
+      </p>
+      <p>
+        <span class="btn btn-success"><%= link_to "Edit", edit_puppy_path(@puppy) %></span>
+        <span class="btn btn-danger"><%= link_to "Destroy", puppy_path(@puppy), method: :delete, data: { confirm: 'Are you sure?' } %></span>
+      </p>
+    </div>
+    </div>
+  </div>
+</div>
