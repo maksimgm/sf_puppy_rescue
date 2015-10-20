@@ -22,8 +22,8 @@
               <%=p.bio%>
             </p>
             <!-- Why cant i edit color of font withput puttin a class? -->
-              <button class="btn btn-success "><%= link_to "Edit", edit_puppy_path(p) %></button>
-              <button class="btn btn-warning text-muted"><%= link_to "Destroy", p, method: :delete, data: {confirm: "Are you sure?"} %></button>
+              <span><%= link_to "Edit", edit_puppy_path(p), class: "btn btn-success" %></span>
+              <span><%= link_to "Destroy", p, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-warning"  %></span>
           </div>
         </div>
       </div>

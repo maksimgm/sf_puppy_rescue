@@ -1,5 +1,3 @@
-
-
 h1,h2,h3,h4,h6{
   font: arial 20px;
 }
@@ -12,6 +10,9 @@ h1,h2,h3,h4,h6{
   max-height: 450px;
   overflow: scroll;
 
+  button{
+   color: white; 
+  }
 }
 
 img{

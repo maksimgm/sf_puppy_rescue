@@ -14,8 +14,8 @@
             
         </p>
         <p>
-          <button class="pull-left btn btn-success btn-large btn-large showBtn"><%= link_to "Edit", edit_puppy_path(@puppy) %></button>
-          <button class="btn showBtn pull-right btn-danger"><%= link_to "Destroy", puppy_path(@puppy), method: :delete, data: { confirm: 'Are you sure?' } %></button>
+          <span><%= link_to "Edit", edit_puppy_path(@puppy), class: "btn btn-success btn-lg showBtn" %></span>
+          <span><%= link_to "Destroy", puppy_path(@puppy), method: :delete, data: { confirm: 'Are you sure?'}, class: "btn showBtn btn-danger btn-lg" %></span>
         </p>
       </div>
       </div>
