@@ -1,0 +1,51 @@
+
+
+h1,h2,h3,h4,h6{
+  font: arial 20px;
+}
+
+.thumbnail{
+  border: 3px #5F6E7D solid;
+  border-radius: 10px;
+  background-color: #93D4E7;
+  height: 450px;
+  max-height: 450px;
+  overflow: scroll;
+
+}
+
+img{
+  border-radius: 4px;
+  max-width: 250px;
+  max-height: 140px;
+  border: 2px solid #449458;
+  opacity: 0.7;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+h5{
+  font-size: 16px;
+  color: #5f6e7d;
+}
+
+.btn{
+   text-transform: uppercase;
+   font-weight: bold;
+   color: white;
+}
+.showBtn{
+  margin-top: 40px;
+}
+
+.form-group{
+  margin-bottom: 10px;
+}
+
+.control-label, .form-control{
+  margin-bottom: 20px;
+}

@@ -10,13 +10,13 @@
 <div class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-    <% @puppies.each do |p| %>
-      <span class="btn btn-info"> <%= link_to "About", "/puppies/about" %></span>
-      <span class="btn btn-info"> <%= link_to "Contact", "/puppies/contact" %></span>
-      <a class="btn btn-info" href="/puppies/about">About</a>
-      <a class="btn btn-info" href="/puppies/contact">Contact</a>
+    
+      <span class="btn btn-info"><%= link_to "Home", "/" %></span>
+      <span class="btn btn-info"><%= link_to "About", "/about" %></span>
+      <span class="btn btn-info"><%= link_to "Contact", "/contact" %></span>
+      <span class="btn btn-info"><%= link_to "Add Puppy", "/puppies/new" %></span>
+      
       <!-- ADD CONTACT AND ABOUT PAGES -->
-      <% end %>
     </div>
   </div>
 </div>

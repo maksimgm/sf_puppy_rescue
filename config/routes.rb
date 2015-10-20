@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'puppies#index'
+  get '/about', to: 'puppies#about'
+  get '/contact', to: 'puppies#contact'
   resources :puppies
-  get '/puppies/about', to: 'pins#about'
-  get '/puppies/contact', to: 'pins#contact'
 end
